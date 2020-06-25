@@ -21,19 +21,3 @@ nav a:hover{
 nav a:focus{
 	color:white;
 }
-html, body {
-  height: 100%;
-  margin: 0;
-}
-.content {
-  min-height: 100%;
-}
-.content-inside {
-  padding: 5%;
-  padding-bottom:10%;
-  padding-left:8%;
-}
-.footer {
-  height: 50px;
-  margin-top: -50px;
-}
