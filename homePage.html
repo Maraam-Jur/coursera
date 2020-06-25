@@ -13,8 +13,8 @@
    <link rel="icon" type="image/ico" href="imgs/icon.png" />
 </head>
 <body>
-  <!-- Top Nav bar beginning -->
- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <!-- Navagation bar at the top -->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
   <a class="navbar-brand" >  <img src="imgs/icon.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
     CookMe </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,7 +24,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item ">
-        <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" data-toggle="modal" data-target="#staticBackdrop">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -43,24 +43,23 @@
           
       </li>
       <li class="nav-item">
-        <a class="nav-link " href="#homePageFooter">Download the App</a>
+        <a class="nav-link " href="#downloadApp">Download the App</a>
       </li>
     </ul>
-       <button class="btn btn-secondary" type="button" onclick="logOut()">Log out</button>
   </div>
-
-</nav>
- <!-- too  Nav bar Ending -->
-<!-- Jumbotron beginning -->
-<div class="jumbotron jumbotron-fluid">
-  <a class="btn btn-danger btn-lg button" href="addRecipes.html" role="button">App my own recipes </a>
+</nav><!-- End on nagivation bar -->
+<!-- Jumbotron -->
+<div class="jumbotron jumbotron-fluid ">
+    <a class="btn btn-danger btn-lg button" href="addRecipes.html" role="button">App my own recipes </a>
    <a class="btn btn-danger btn-lg button" href="recipeBook.html" role="button">Recipes book</a>
-</div>
- <!-- Jumbotron ending -->
-  <!-- footer beginning -->
-<div class="content">
-    <div class="content-inside">
-        <h3> <em>Quotes of the day</em> </h3>
+  </div>
+<!-- end of jumbotron-->
+<!-- second section-->
+<div class="container">
+  <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+  <div class="row">
+    <div class="col-md-12">
+       <h3> <em>Quotes of the day</em> </h3>
        <blockquote>
      " No one who cooks, cooks alone. Even at her most solitary, a cook in the kitchen is surrounded by generations of cooks past, the advice and menus of cooks present, the wisdom of cookbook writers "<br> <strong> Laurie Colwin</strong>
     </blockquote>
@@ -76,10 +75,14 @@
     <blockquote>
      "  Nobody thinks it’s silly to invest two hours’ work in two minutes’ enjoyment; but if cooking is evanescent, well, so is the ballet "<br> <strong>Julia Child</strong>
     </blockquote>
-    </div>
-  </div>
-<footer class="footer">
-<nav class="navbar navbar-dark bg-dark" id="homePageFooter">
+   </div>
+ </div>
+</div>
+     <!-- Modal applying for a job-->
+
+ <footer  class="footer text-white bg-dark " id="contactInfo">
+     <div class="container">
+      <nav class="navbar navbar-dark bg-dark" id="homePageFooter">
   <a class="navbar-brand" href="#">
     <img src="imgs/dow.PNG" width="40" height="40" alt="Download">
     Download App
@@ -106,12 +109,22 @@
   </div>
 </div>
 </nav>
-</footer>
- <!-- footer ending -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    </div>
+    </footer>
+
+    
+
+  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="cookME.js">
-    </script>
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script src="CookMe.js"></script>
+  
+    
 </body>
 </html>
