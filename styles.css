@@ -1,0 +1,43 @@
+
+.jumbotron{
+ padding-top:5%;
+ padding-left:2%;
+ text-align:center;
+ background-image:url("imgs/cover.jpg");
+ background-size:100%;
+}
+#error,#errorForm,#success{
+	display:none;
+}
+a:hover{
+	cursor:pointer;
+	text-decoration:none;
+}
+a:focus{
+	cursor:pointer;
+	text-decoration:none;
+}
+.Download{
+	text-align:center;
+	margin-top:5%;
+	padding:3%;
+	background-color:#E6E6FA
+	
+
+}
+.Download img{
+	width:25%;
+
+}
+.footer{
+	padding:3%;
+	width:100%;
+	
+}
+.card{
+	margin:3%;
+	text-align:center;
+	
+}
+
+

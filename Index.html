@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+  <title> CookMe </title>
+   <link rel="icon" type="image/ico" href="imgs/icon.png" />
+</head>
+<body>
+  <!-- Navagation bar at the top -->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+  <a class="navbar-brand" >  <img src="imgs/icon.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+    CookMe </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link" data-toggle="modal" data-target="#staticBackdrop">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Recipes
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" data-toggle="modal" data-target="#staticBackdrop">French</a>
+          <a class="dropdown-item" data-toggle="modal" data-target="#staticBackdrop">Italian</a>
+          <a class="dropdown-item" data-toggle="modal" data-target="#staticBackdrop">Indian</a>
+          <a class="dropdown-item" data-toggle="modal" data-target="#staticBackdrop">Mexican</a>
+          <a class="dropdown-item" data-toggle="modal" data-target="#staticBackdrop">Spanish</a>
+          <a class="dropdown-item" data-toggle="modal" data-target="#staticBackdrop">Mediterranean </a>
+            <div class="dropdown-divider"></div>
+          <a class="dropdown-item" data-toggle="modal" data-target="#staticBackdrop">Search for other cuisines</a>
+        </div>
+          
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="#downloadApp">Download the App</a>
+      </li>
+    </ul>
+  </div>
+</nav><!-- End on nagivation bar -->
+<!-- Jumbotron -->
+<div class="jumbotron jumbotron-fluid ">
+  <h1 class="display-4">Welcome to CookMe </h1>
+  <p class="lead">CookMe is the largest refrence for cooking recipes , if you are a chef or in love with cooking this will be your ever-lasting recipe-book. <br>Join us to enjoy our website and add your own recipes from all over the world!</p>
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+  Join Now
+</button>
+
+<!-- Modal for joining -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdrop" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+<div class="modal-body">
+<form name="myForm">
+<div id="error" class="alert alert-danger"></div>
+  <div class="form-group"> 
+    <label>Email Address</label> 
+    <input type="email" name="email" class="form-control"  id="email">
+    <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label>Password</label> 
+    <input  id="password" type="password" name="your-password" class="form-control">
+  </div>
+</form>
+<div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <input type="submit" class="btn btn-success" value="Sign up" onclick="sign()">
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- end of jumbotron-->
+<!-- second section-->
+<div class="container">
+  <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+  <div class="row">
+    <div class="col-md-6">
+      <h3> Our Latest News </h3>
+     <p>
+     CookMe team is starting the idea of opening a resturant with the menu inspired from a collection of our chosen recipes here on the website and the application , if you have any experience in waitressing or you are a chef and looking for a job you can join us by filling the application. The resturant opening will not be until September 9 <sup> th </sup > and the job includes an introduction training by our main chefs to catch on so if you are a beginner you can 
+     improve your skills using this program . <a  href="#" data-toggle="modal" data-target="#exampleModal" > Apply Now </a>
+     <br><br>
+     <p> For more infromation before you fill the form you can contact our team using our phone number or email from <a href="#contactInfo"> Here</a></p>
+     <!-- Modal applying for a job-->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Applying for a job </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="errorForm" class=" alert alert-danger"></div>
+        <div id="success" class="alert alert-success"></div>
+        <form name="ApplyForm">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="firstName">First Name</label>
+      <input type="text" class="form-control" id="firstName">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="lastName">Last Name</label>
+      <input type="text" class="form-control" id="lastName">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="emailClient">Email</label>
+    <input type="email" class="form-control" id="emailClient">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label >Position</label>
+      <select class="form-control" id="Position">
+        <option value="">Choose a position</option>
+        <option value="Head chef">Head Chef</option>
+        <option value="Sous Chef">Sous Chef</option>
+        <option value="Waitre">Waitre/s</option>
+      </select>
+    </div>
+    <div class="form-group col-md-6">
+      <label >Years of experience</label>
+      <select class="form-control" id="Years" required>
+        <option value="">Choose an option</option>
+        <option value="none">none</option>
+        <option value="less than 5 years">less than 5 years</option>
+        <option value="more than five years">more than five years</option>
+      </select>
+    </div>
+    <div class="form-group col-md-8">
+      <label for="phone">Telepone number</label>
+      <input type="tel" class="form-control" id="phone">
+    </div>
+  </div>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success" onclick="Sub()">Submit request</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+    <!-- the slides -->
+    <div class="col-6 col-md-6">
+      <div id="carousel" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="imgs/res1.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="imgs/res4.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="imgs/res2.jpg" alt="Third slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="imgs/res7.jpg" alt="Third slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="imgs/res8.jpg" alt="Third slide">
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+<!-- end of second section-->
+<!-- Last section on the page-->
+<div class="container-fluid Download" id="downloadApp">
+   <p> <strong><em>Our App is available on both ios and andriod </em></strong></p>
+     <p>
+       <a href="#"><img src="imgs/downloadapp.JPG" class="img-fluid" alt="downloadingApp"/></a>
+     </p>
+</div>
+ <footer  class="footer text-white bg-dark " id="contactInfo">
+     <div class="container">
+      <h5> Contact Information </h5>
+      <div>Email us at : cookMe_ly@gmail.com</div>
+      <p>Phone +218 91 3666076</p>
+      <p> &copy; MyWebsite 2020</p>
+    </div>
+    </footer>
+
+    
+
+  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script src="CookMe.js"></script>
+  
+    
+</body>
+</html>

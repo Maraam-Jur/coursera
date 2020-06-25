@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="addRecipe.css">
+ 
+
+  <title> CookMe </title>
+   <link rel="icon" type="image/ico" href="imgs/icon.png" />
+</head>
+<body>
+  <!-- Top Nav bar beginning -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" >  <img src="imgs/icon.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+    CookMe </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Recipes
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" data-toggle="modal" data-target="#staticBackdrop">French</a>
+          <a class="dropdown-item" data-toggle="modal" data-target="#staticBackdrop">Italian</a>
+          <a class="dropdown-item" data-toggle="modal" data-target="#staticBackdrop">Indian</a>
+          <a class="dropdown-item" data-toggle="modal" data-target="#staticBackdrop">Mexican</a>
+          <a class="dropdown-item" data-toggle="modal" data-target="#staticBackdrop">Spanish</a>
+          <a class="dropdown-item" data-toggle="modal" data-target="#staticBackdrop">Mediterranean </a>
+            <div class="dropdown-divider"></div>
+          <a class="dropdown-item" data-toggle="modal" data-target="#staticBackdrop">Search for other cuisines</a>
+        </div>
+          
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="#Footer">Download the App</a>
+      </li>
+    </ul>
+       <button class="btn btn-secondary" onclick="goBack()">Go back</button>
+  </div>
+</nav>
+<div class="container-fluid alert alert-primary">
+  Adding your own recipe is one of the special features of CookMe, by sharing your own family recipes to the world you can enhance the experience of foold culture everywhere . Make sure to input valid steps and precise ingredients , each added recipe receives a number of approves and disapproves and if your resipe received more than 50% disapproves you will be warned and after two weeks it will be removed if it was not edited.
+</div>
+<div class="container">
+<form class="was-validated">
+  <div class="form-row">
+    <div class="form-group col-md-12">
+      <label for="recipename">Recipe Name</label>
+      <input type="text" class="form-control is-invalid" id="recipename" required>
+    </div>
+    <div class="form-group col-md-12">
+    <select class="custom-select" required>
+      <option value="">Open this select menu</option>
+      <option value="1">French</option>
+      <option value="2">Italian</option>
+      <option value="3">Indian</option>
+      <option value="4">Mexican</option>
+      <option value="5">Spanish</option>
+      <option value="6">Mediterranean</option>
+    </select>
+    <div class="invalid-feedback">Example invalid custom select feedback</div>
+  </div>
+  </div>
+  <div class="form-group">
+    <label for="textAr1">Indgredients</label>
+    <textarea class="form-control is-invalid"  rows="10" placeholder="Make sure to write down clear proportions"  id="textAr1" required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="textAr2">Steps</label>
+    <textarea class="form-control is-invalid"  id="textAr2" rows="20" placeholder="Make sure to write down clear and precise steps" required=""></textarea>
+  </div>
+  <div class="custom-file">
+    <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+    <label class="custom-file-label" for="validatedCustomFile">Add required photos</label>
+  </div>
+  <button type="submit" class="btn btn-danger" id="AddRec">Add Recipe</button>
+</form>
+</div>
+<nav class="navbar navbar-dark bg-dark" id="Footer">
+  <a class="navbar-brand" href="#">
+    <img src="imgs/dow.png" width="40" height="40" alt="Download">
+    Download App
+  </a>
+   <a  href="#" data-toggle="modal" data-target="#ContactModel" > Contact Info</a>
+<div class="modal fade" id="ContactModel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Contact Info</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div>Email us at : cookMe_ly@gmail.com</div>
+        <p>Phone +218 91 3666076</p>
+         <p> &copy; MyWebsite 2020</p>
+      </div>
+       <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</nav>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="cookME.js">
+    </script>
+</body>
+</html>

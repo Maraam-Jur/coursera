@@ -1,0 +1,20 @@
+
+#AddRec{
+  margin-top:2%;
+}
+#Footer{
+  margin-top:2%;
+}
+a{
+  color:white;
+}
+nav a:hover{
+  color:white;
+  text-decoration:none;
+  cursor:pointer;
+}
+nav a:focus{
+   color:white;
+   text-decoration:none;
+   cursor:pointer;
+}

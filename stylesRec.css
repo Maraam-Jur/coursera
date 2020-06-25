@@ -1,0 +1,13 @@
+a{
+  color:white;
+}
+nav a:hover{
+  color:white;
+  text-decoration:none;
+  cursor:pointer;
+}
+nav a:focus{
+	color:white;
+  text-decoration:none;
+  cursor:pointer;
+}

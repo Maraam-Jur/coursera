@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesRec.css">
+  
+
+  <title> CookMe </title>
+   <link rel="icon" type="image/ico" href="imgs/icon.png" />
+</head>
+<body>
+  <!-- Navagation bar at the top -->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+  <a class="navbar-brand" >  <img src="imgs/icon.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+    CookMe </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link" data-toggle="modal" data-target="#staticBackdrop">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Recipes
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" data-toggle="modal" data-target="#staticBackdrop">French</a>
+          <a class="dropdown-item" data-toggle="modal" data-target="#staticBackdrop">Italian</a>
+          <a class="dropdown-item" data-toggle="modal" data-target="#staticBackdrop">Indian</a>
+          <a class="dropdown-item" data-toggle="modal" data-target="#staticBackdrop">Mexican</a>
+          <a class="dropdown-item" data-toggle="modal" data-target="#staticBackdrop">Spanish</a>
+          <a class="dropdown-item" data-toggle="modal" data-target="#staticBackdrop">Mediterranean </a>
+            <div class="dropdown-divider"></div>
+          <a class="dropdown-item" data-toggle="modal" data-target="#staticBackdrop">Search for other cuisines</a>
+        </div>
+          
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="#Footer">Download the App</a>
+      </li>
+    </ul>
+    <button class="btn btn-secondary" onclick="goBack()">Go back</button>
+  </div>
+</nav><!-- End on nagivation bar -->
+<div class="container">
+<div class="row">
+ <div class="col-md-6 col-lg-4 col-sm-12 py-2" >
+   <div class="card h-100" style="width: 18rem;">
+  <img class="card-img-top" src="imgs/French.jpg" alt="Card image cap">
+  <div class="card-body ">
+    <h5 class="card-title">French cuisine</h5>
+    <p class="card-text">150 recipes</p>
+    <button class="card-link btn btn-danger">Recipes</button>
+  </div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 col-sm-12 py-2" >
+   <div class="card h-100" style="width: 18rem;">
+  <img class="card-img-top" src="imgs/Italian.jpg" alt="Card image cap">
+  <div class="card-body ">
+    <h5 class="card-title">Italian cuisine</h5>
+    <p class="card-text">190 recipes</p>
+    <button class="card-link btn btn-danger">Recipes</button>
+  </div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 col-sm-12 py-2" >
+   <div class="card h-100" style="width: 18rem;">
+  <img class="card-img-top" src="imgs/Indian.jpg" alt="Card image cap">
+  <div class="card-body ">
+    <h5 class="card-title">Indian cuisine</h5>
+    <p class="card-text">230 recipes</p>
+    <button class="card-link btn btn-danger">Recipes</button>
+  </div>
+</div>
+</div>
+</div>
+<div class="row">
+ <div class="col-md-6 col-lg-4 col-sm-12 py-2" >
+   <div class="card h-100" style="width: 18rem;">
+  <img class="card-img-top" src="imgs/Mexican.jpg" alt="Card image cap">
+  <div class="card-body ">
+    <h5 class="card-title">Mexican cuisine</h5>
+    <p class="card-text">200 recipes</p>
+    <button class="card-link btn btn-danger">Recipes</button>
+  </div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 col-sm-12 py-2" >
+   <div class="card h-100" style="width: 18rem;">
+  <img class="card-img-top" src="imgs/Spanish.jpg" alt="Card image cap">
+  <div class="card-body ">
+    <h5 class="card-title">Spanish cuisine</h5>
+    <p class="card-text">140 recipes</p>
+    <button class="card-link btn btn-danger">Recipes</button>
+  </div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 col-sm-12 py-2" >
+   <div class="card h-100" style="width: 18rem;">
+  <img class="card-img-top" src="imgs/Med.jpg" alt="Card image cap">
+  <div class="card-body ">
+    <h5 class="card-title">Mediterranean  cuisine</h5>
+    <p class="card-text">250 recipes</p>
+    <button class="card-link btn btn-danger">Recipes</button>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<br>
+<nav class="navbar navbar-dark bg-dark" id="Footer">
+  <a class="navbar-brand" href="#">
+    <img src="imgs/dow.png" width="40" height="40" alt="Download">
+    Download App
+  </a>
+   <a  href="#" data-toggle="modal" data-target="#ContactModel" > Contact Info</a>
+<div class="modal fade" id="ContactModel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Contact Info</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div>Email us at : cookMe_ly@gmail.com</div>
+        <p>Phone +218 91 3666076</p>
+         <p> &copy; MyWebsite 2020</p>
+      </div>
+       <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</nav>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script  src="cookME.js">
+    </script>
+</body>
+</html>
