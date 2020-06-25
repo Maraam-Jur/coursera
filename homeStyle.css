@@ -25,3 +25,15 @@ nav a:focus{
 	padding:3%;
 	width:100%;	
 }
+.Download{
+	text-align:center;
+	margin-top:5%;
+	padding:3%;
+	background-color:#E6E6FA
+	
+
+}
+.Download img{
+	width:25%;
+
+}
