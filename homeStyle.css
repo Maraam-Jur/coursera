@@ -21,3 +21,8 @@ nav a:hover{
 nav a:focus{
 	color:white;
 }
+.footer{
+	padding:3%;
+	width:100%;
+	
+}
